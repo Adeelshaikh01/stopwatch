@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff8008" fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,133.3C480,149,600,235,720,245.3C840,256,960,192,1080,149.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    <div class="main">
+        <h1>Stopwatch</h1>
+        <div class="counterBody">
+            <p id="secs">0</p>
+            <p id="colon">:</p>
+            <p id="miliValue">00</p>
+        </div>
+        <input type="button" id="startBtn" onclick="counterStart()" value="Start">
+        <input type="button" id="stopBtn" onclick="stopCounter()" value="Stop" disabled>
+        <input type="button" id="clearBtn" onclick="counterReset()" value="clear" disabled>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
